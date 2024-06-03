@@ -1,5 +1,6 @@
 package com.devsuperior.movieflix.services;
 
+import com.devsuperior.movieflix.dto.MovieCardDTO;
 import com.devsuperior.movieflix.dto.MovieDetailsDTO;
 import com.devsuperior.movieflix.entities.Movie;
 import com.devsuperior.movieflix.repositories.MovieRepository;
@@ -14,7 +15,7 @@ import java.util.Optional;
 @Service
 public class MovieService {
 
-    @Autowired
+    /*@Autowired
     private MovieRepository repository;
 
     @Transactional(readOnly = true)
@@ -25,5 +26,11 @@ public class MovieService {
 
         return new MovieDetailsDTO(movie);
     }
+
+    @Transactional(readOnly = true)
+    public Page<MovieCardDTO> findByGenre(String genreId) {
+        Page<MovieCardDTO> result = findByGenre(genreId);
+        return result;
+    }*/
 
 }
